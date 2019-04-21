@@ -1,0 +1,319 @@
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+}
+body{
+  background:linear-gradient(to  right,#141852,#080b3a,#000000);
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+.star{
+  position:absolute;
+  top:250px;
+  left:700px;
+  height:15px;
+  width:15px;
+}
+.star::after{
+  font-size:18px;
+  content:'🌟';
+  color:white;
+}
+.star1{
+  position:absolute;
+  top:20px;
+  left:300px;
+  height:15px;
+  width:15px;
+}
+.star1::after{
+  font-size:18px;
+  content:'🌠 ';
+  color:white;
+}
+.star2{
+  position:absolute;
+  top:200px;
+  left:70px;
+  height:15px;
+  width:15px;
+}
+.star2::after{
+  font-size:18px;
+  content:'🌟 ';
+  color:white;
+}
+.box{
+  position:relative;
+  height:1px;
+  width:1px;
+  left:60px;
+  top:50px;
+  background-color:#a3c3ce;
+  border-radius:50%;
+  box-shadow:inset 2px 2px 0px 7px #5f7d87;
+}
+@keyframes boxmove{
+  0%{
+    top:100px;
+  }
+  25%{
+    left:500px;
+  
+  }
+  50%{  
+    top:200px;
+  }
+  100%{ 
+    top:500px;
+  }
+}
+.moon{
+  position:absolute;
+  height:80px;
+  width:80px;
+  top:50px;
+  left:100px;
+  background-color:#FCD954;
+  border-radius:50%;
+  box-shadow:inset 5px -3px 0px 5px #e0bd1d;
+   transition:all 2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+}
+.moon:hover{
+  transform:rotate(260deg);
+  margin-top:0px;
+}
+.moon::before{
+  content:'';
+  position:absolute;
+  left:20px;
+  top:10px;
+  height:15px;
+  width:15px;
+  border-radius:50%;
+  background-color:#e0bd1d;
+  box-shadow:inset -2px 3px 0px 0.5px #8A7700;
+}
+.moon::after{
+  content:'';
+  position:absolute;
+  left:25px;
+  top:40px;
+  height:25px;
+  width:25px;
+  border-radius:50%;
+  background-color:#e0bd1d;
+  box-shadow:inset -5px 3px 0px 1px #8A7700;
+}
+.uglyplanet{
+  position:absolute;
+  height:60px;
+  width:60px;
+  left:580px;
+  top:200px;
+  background-color:#c4fff5;
+  border-radius:50%;
+  box-shadow:inset 5px -3px 0px 5px #42ceb6;
+}
+.uglyplanet::before{
+  content:'';
+  position:absolute;
+  left:40px;
+  top:10px;
+  height:10px;
+  width:10px;
+  border-radius:50%;
+  background-color:#42ceb6;
+  box-shadow:inset -2px 3px 0px 0.5px #2bad97;
+}
+.uglyplanet::after{
+   content:'';
+  position:absolute;
+  left:20px;
+  top:30px;
+  height:20px;
+  width:20px;
+  border-radius:50%;
+  background-color:#42ceb6;
+  box-shadow:inset -5px 3px 0px 1px #2bad97;
+}
+.planet{
+  position:absolute;
+  top:300px;
+  left:600px;
+  height:500px;
+  width:500px;
+  border-radius:50%;
+  background:linear-gradient(to right,#d39b2c,#a56e00);
+  box-shadow:inset 20px 10px 0px 0px rgba(51,51,51,0.4);
+}
+.bright{
+  position:absolute;
+  top:450px;
+  left:520px;
+  height:80px;
+  width:700px;
+  border-left:65px solid rgba(211,155,44,0.7);
+  border-bottom:20px solid rgba(211,155,44,0.7);
+  border-right:65px solid rgba(211,155,44,0.35);
+  border-radius:135px/50px;
+  border:opacity(0.5);
+  transform:rotate(20deg);
+}
+.cloud{
+  position:absolute;
+  top:45px;
+  left:850px;
+  width:75px;
+  height:20px;
+  background-color:white;
+  border-radius:25px;
+  animation-name:cloudmove;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+}
+.cloud::before{
+  content:'';
+  position:absolute;
+  top:-11px;
+  left:3px;
+  height:25px;
+  width:40px;
+  background-color:white;
+  border-radius:50%/100% 100% 0 0;
+}
+.cloud::after{
+  content:'';
+  position:absolute;
+  top:-15px;
+  left:30px;
+  height:25px;
+  width:40px;
+  background-color:white;
+  border-radius:50%/100% 100% 0 0;
+}
+.cloud1{
+  position:absolute;
+  top:500px;
+  left:150px;
+  width:75px;
+  height:20px;
+  background-color:white;
+  border-radius:25px;
+}
+.cloud1::before{
+  content:'';
+  position:absolute;
+  top:-11px;
+  left:3px;
+  height:25px;
+  width:40px;
+  background-color:white;
+  border-radius:50%/100% 100% 0 0;
+}
+.cloud1::after{
+  content:'';
+  position:absolute;
+  top:-15px;
+  left:30px;
+  height:25px;
+  width:40px;
+  background-color:white;
+  border-radius:50%/100% 100% 0 0;
+}
+.ufo{
+  position:absolute;
+  top:300px;
+  left:30px;
+  height:50px;
+  width:100px;
+  background-color:rgba(191, 255, 236,0.8);
+  border-radius:50%/100% 100% 0 0;
+  animation-name:boxmove;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+}
+.ufo::before{
+  position:absolute;
+  content:'';
+  top:35px;
+  left:-10px;
+  width:120px;
+  height:25px;
+  background:linear-gradient(to bottom right,#f4dc50,#c6d893,#f4dc50,#c6d893);
+  border-radius:25px;
+}
+.ufo::after{
+  content:'';
+  position:absolute;
+  top:8px;
+  left:63px;
+  height:15px;
+  width:10px;
+  background-color:white;
+  border-radius:50%;
+  transform:rotate(-50deg);
+}
+
+@keyframes cloudmove{
+  0%{
+    left:750px;
+  }
+ 
+  100%{ 
+    left:1000px;
+  }
+}
+.shotting{
+  position:absolute;
+  left:800px;
+  top:150px;
+  height:40px;
+  width:150px;
+  border-radius:100px/ 50px;
+  border-left:4px solid rgba(229,198,255,0.4);
+  border-top:2px solid rgba(229,198,255,0.4);
+  border-bottom:2px solid rgba(229,198,255,0.4);
+  background:linear-gradient(to right, rgba(229,198,255),transparent);
+  box-shadow:inset 3px 0px 0px 3px #d7a8ff ;
+  transform:rotate(-140deg);
+  animation-name:shottingmove;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+}
+.shotting:before{
+  content:'';
+  position:absolute;
+  left:5px;
+  top:5px;
+  height:28px;
+  width:28px;
+  border-radius:50%;
+  border-right:4px solid rgb(229,198,255);
+  background:linear-gradient(to right,rgba(229,198,255,0.1),#fff);
+  box-shadow:inset 2px 0px 0px #fff;
+}
+.shotting:after{
+  content:'';
+  position:absolute;
+  left:-20px;
+  top:-10px;
+  height:60px;
+  width:150px;
+  border-radius:100px/ 50px;
+  border-left:4px solid rgba(229,198,255,0.7); 
+}
+@keyframes shottingmove{
+  0%{
+    left:750px;
+  }
+ 
+  100%{ 
+    left:1200px;
+    top:500px;
+    opacity:0.1;
+  }
+}
